@@ -24,10 +24,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Log into our DC-1 Virtual Machine
+- Install Active Directory Domain Services and set new forest as mydomain.com
+- Create a new organizational unit and make admins
+- Create users and admins to access the Domain Controller
 
 <h2>Deployment and Configuration Steps</h2>
 
