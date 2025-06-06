@@ -35,7 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+When we are logged into the DC-1 VM we want to click on add server roles and then we want to enable Active directory domain services. Now we want to make DC-1 an actual domain controller and give it a new forest. There will be a flag we can click on the top right of the screen from here we can make a new forest, and make the root name mydomain.com. Then you can keep clicking next until the install prompt comes up then finally you can install it. Now we restart our domain controller.
 </p>
 <br />
 
@@ -43,14 +43,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+log back into DC-1 and we are going to create a domain admin user. We are going to go into active directory users and computer and we need to make 3 folders that say ADMINS, EMPLOYEES, and CLIENTS. We will make jane Doe an admin and put it in the admin folder. For this example we will use Jane Doe as an admin and now we can log into the Domain controller as jane doe now because we made her an admin.
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+So now we join client 1 to the domain. So log back into the DC-1 VM from the azure portal as jane doe. We need to go into the computer setting and make DC-1 a domain of mydomain.com. Save and restart so it will be a member of the domain. Now we need to go to the client folder and we can make a client john doe. Then in the employess we can make many employees with powershell.
 </p>
 <br />
