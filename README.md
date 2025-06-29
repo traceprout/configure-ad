@@ -32,7 +32,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 
-![osticket actually 9](https://github.com/user-attachments/assets/0cf9cebb-66bf-4c7b-9fb7-6c1a20bcf953)
+![osticket actually 10](https://github.com/user-attachments/assets/459f888b-7e10-4ad5-8602-b0bf5785cdb3)
+
 
 </p>
 <p>
@@ -41,7 +42,8 @@ When we are logged into the DC-1 VM we want to click on add server roles and the
 <br />
 
 
-![osticket actually 10](https://github.com/user-attachments/assets/a5f160bb-4aad-4fbe-b23f-3f9c9af85ec4)
+![osticket actually 9](https://github.com/user-attachments/assets/09f8b54a-1486-4f24-80ee-1a571afffdef)
+
 
 </p>
 <p>
@@ -49,7 +51,7 @@ log back into DC-1 and we are going to create a domain admin user. We are going 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
 So now we join client 1 to the domain. So log back into the DC-1 VM from the azure portal as jane doe. We need to go into the computer setting and make DC-1 a domain of mydomain.com. Save and restart so it will be a member of the domain. Now we need to go to the client folder and we can make a client john doe. Then in the employess we can make many employees with powershell.
