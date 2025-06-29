@@ -31,16 +31,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![osticket actually 9](https://github.com/user-attachments/assets/0cf9cebb-66bf-4c7b-9fb7-6c1a20bcf953)
+
 </p>
 <p>
 When we are logged into the DC-1 VM we want to click on add server roles and then we want to enable Active directory domain services. Now we want to make DC-1 an actual domain controller and give it a new forest. There will be a flag we can click on the top right of the screen from here we can make a new forest, and make the root name mydomain.com. Then you can keep clicking next until the install prompt comes up then finally you can install it. Now we restart our domain controller.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![osticket actually 10](https://github.com/user-attachments/assets/a5f160bb-4aad-4fbe-b23f-3f9c9af85ec4)
+
 </p>
 <p>
 log back into DC-1 and we are going to create a domain admin user. We are going to go into active directory users and computer and we need to make 3 folders that say ADMINS, EMPLOYEES, and CLIENTS. We will make jane Doe an admin and put it in the admin folder. For this example we will use Jane Doe as an admin and now we can log into the Domain controller as jane doe now because we made her an admin.
